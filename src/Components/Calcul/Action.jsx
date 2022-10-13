@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ResulatContext } from './../../Page/Calcul';
+import { Calculate } from './Calculate';
 
 function Action(props) {
 
@@ -10,7 +11,7 @@ function Action(props) {
 		console.log(action);
 		let egale = '';
 		if ( action === 'egale' ) {
-			egale = eval(Resulat.ecran);
+			egale = Calculate(Resulat.ecran);
 			Resulat.modifierAffichage(egale);
 			Resulat.modifierEcran('', true);			
 		} else {
