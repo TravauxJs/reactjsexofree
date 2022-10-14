@@ -10,7 +10,8 @@ function Action(props) {
 		console.log(action);
 		let egale = '';
 		if ( action === 'egale' ) {
-			egale = eval(Resulat.ecran);
+			//egale = eval(Resulat.ecran);
+			//Resulat.modifierAffichage(egale);
 			Resulat.modifierAffichage(egale);
 			Resulat.modifierEcran('', true);			
 		} else {
